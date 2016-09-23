@@ -1,6 +1,3 @@
-# In python, an instance is, for example, a specific musician in a music class.
-
-
 class Musician(object):
     def __init__(self, sounds): # method, as in, a function in a class
         self.sounds = sounds
@@ -37,7 +34,8 @@ class Drummer(Musician):
     def combust(self):
         print("aaarrrggghhh BOOM")
 
-class Band(Musician):
+
+class Band:
 
     def __init__(self):
         print("created, band")
@@ -50,15 +48,15 @@ class Band(Musician):
 
 
 def main():
-    John = Guitarist()
-    John.solo(6)
+    john = Guitarist()
+    john.solo(6)
 
-    Adam = Drummer()
-    Adam.count_in()
-    Adam.combust()
+    adam = Drummer()
+    adam.count_in()
+    adam.combust()
 
-    Blink = Band()
-    Blink.fire()
+    blink = Band()
+    blink.fire()
 
 
 if __name__ == '__main__':
